@@ -47,9 +47,9 @@ bindsym Mod1+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-#bindsym $mod+d exec "rofi -combi-modi window,drun -show combi -modi combi"
+bindsym $mod+d exec "rofi -combi-modi window,drun -theme gruvbox-dark -show combi -modi combi"
 
 # change focus
 bindsym $mod+j focus left
@@ -191,7 +191,7 @@ exec --no-startup-id radiotray
 exec --no-startup-id urxvt256c-ml -e tmux
 exec --no-startup-id mpd
 #exec --no-startup-id mate-appearance-properties
-exec --no-startup-id feh --randomize --bg-max ~/Documents/Candy/Wallpapers/*
+exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers/*
 exec --no-startup-id /usr/libexec/xfce-polkit ¥
 #exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &

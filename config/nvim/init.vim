@@ -49,6 +49,7 @@ Plug 'will133/vim-dirdiff'
 Plug 'tmhedberg/SimpylFold'
 " SCSS / CSS
 Plug 'ap/vim-css-color'
+Plug 'gko/vim-coloresque'
 Plug 'JulesWang/css.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'groenewege/vim-less'

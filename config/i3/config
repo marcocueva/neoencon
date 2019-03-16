@@ -196,8 +196,8 @@ exec --no-startup-id /usr/libexec/xfce-polkit ¥
 #exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
-exec killall -q xfce4-notify.d
-#exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
+#exec killall -q xfce4-notify.d
+exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 # Media player controls
 bindsym XF86AudioPlay  exec playerctl -a play-pause

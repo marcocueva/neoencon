@@ -197,7 +197,7 @@ exec --no-startup-id /usr/libexec/xfce-polkit ¥
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Disable capslock 2019/03/17
-exec --no-startup-id setxkbmap  -option ctrl:nocaps
+#exec --no-startup-id setxkbmap  -option ctrl:nocaps
 
 #exec killall -q xfce4-notify.d
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
@@ -227,7 +227,7 @@ bindsym --release ctrl+Print exec shutter -w -C
 
 #Disable capslock and mousepad
 mode "nocaps"    {
-    bindsym $mod+Shift+u exec setxkbmap  -option ctrl:nocaps
+    bindsym $mod+Shift+u exec setxkbmap  -option ctrl:nocaps shift:both_capslock
     bindsym Shift+c exec --no-startup-id setxkbmap  -option
     bindsym t exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
     bindsym Shift+t exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1

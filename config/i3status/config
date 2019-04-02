@@ -31,10 +31,9 @@ wireless _first_ {
 
 ethernet _first_ {
         # if you use %speed, i3status requires root privileges
-        format_up = "E: %ip (%speed)"
+        format_up = "E: %ip"
         format_down = "E: down"
 }
-udo dnf install lm_sensors
 #battery all {
 #        format = "%status %percentage %remaining"
 #}

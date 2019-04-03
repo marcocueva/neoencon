@@ -97,6 +97,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias cl='clear'
+alias gpaste='/usr/libexec/gpaste/gpaste-ui'
 alias you='youtube-dl'
 
 # Add an "alert" alias for long running commands.  Use like so:

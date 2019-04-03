@@ -45,7 +45,7 @@ alias vim='vimx'
 alias gpaste='/usr/libexec/gpaste/gpaste-ui'
 
 # GIT ALIASES
-alias g=git
+alias g='git'
 alias ga='git add'
 alias gb='git branch'
 alias gba='git branch -a'
@@ -86,7 +86,7 @@ extract () {
     else
         echo "'$1' is not a valid file"
     fi
-}
+
 
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache

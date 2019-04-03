@@ -177,7 +177,7 @@ exec --no-startup-id dropbox start
 exec --no-startup-id nm-applet
 exec --no-startup-id megasync start
 exec --no-startup-id gpaste
-exec --no-startup-id clipit
+#exec --no-startup-id clipit
 #exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
 #exec --no-startup-id xfce4-power-manager start
 exec --no-startup-id conky -c ~/.conky/Gotham/Gotham
@@ -192,7 +192,7 @@ exec --no-startup-id ~/.zohodocs/bin/zohodocs
 exec --no-startup-id urxvt256c-ml -e tmux
 exec --no-startup-id mpd
 #exec --no-startup-id mate-appearance-properties
-exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers/*
+exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers
 exec --no-startup-id /usr/libexec/xfce-polkit ¥
 #exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &

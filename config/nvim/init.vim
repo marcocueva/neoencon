@@ -208,6 +208,7 @@ set encoding=utf-8
 set hlsearch
 "Ignore case when searching
 set ignorecase
+set wildignorecase
 set smartcase
 " Incremental searching (search as you type)
 set incsearch

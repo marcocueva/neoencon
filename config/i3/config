@@ -176,9 +176,17 @@ bar {
 exec --no-startup-id dropbox start
 exec --no-startup-id nm-applet
 exec --no-startup-id megasync start
+<<<<<<< HEAD
 exec --no-startup-id gpaste
 exec --no-startup-id clipit
 exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
+#resolved git conflicts
+#=======
+exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
+#exec --no-startup-id clipit
+#exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
+#>>>>>>> c11126f220a9007704f612dda3df3f1f84fc8332
+# End of conflicting
 #exec --no-startup-id xfce4-power-manager start
 exec --no-startup-id conky -c ~/.conky/Gotham/Gotham
 exec --no-startup-id volumeicon start
@@ -192,7 +200,7 @@ exec --no-startup-id radiotray
 exec --no-startup-id urxvt256c-ml -e tmux
 exec --no-startup-id mpd
 #exec --no-startup-id mate-appearance-properties
-exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers/*
+exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers
 exec --no-startup-id /usr/libexec/xfce-polkit ¥
 #exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -217,7 +225,7 @@ bindsym XF86AudioMute exec amixer -D pulse sset Master -- 0% 		    # mute sound
 
 # Take a screenshot upon pressing $mod+z (select an area)
 #bindsym $mod+Shift+z  "scrot -s '/home/marco/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
-bindsym --release $mod+z exec "scrot -s -d 7 -b '/home/marco/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
+bindsym --release $mod+z exec "scrot -s -d 2 -b '/home/marco/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 bindsym $mod+ctrl+z exec "import -window root ~/Pictures/screenshots/Screenshot-$(date +%F%H:%M:%S).png"
 
 #bindsym --release Mod1+Print exec "scrot -b -t '/home/marco/Pictures/screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'"
@@ -269,7 +277,7 @@ bindsym $mod+m exec thunderbird
 bindsym $mod+Shift+b exec qbittorrent
 bindsym $mod+Shift+m exec xterm -e mc
 bindsym $mod+Shift+y exec yakuake
-# bindsym $mod+Shift+g exec chromium-browser
+bindsym $mod+Shift+g exec /usr/libexec/gpaste/gpaste-ui
 bindsym $mod+g exec google-chrome-stable
 bindsym $mod+b exec brave-browser
 bindsym $mod+o exec gnome-calculator

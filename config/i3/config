@@ -178,7 +178,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id megasync start
 exec --no-startup-id gpaste
 exec --no-startup-id clipit
-#exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
+exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
 #exec --no-startup-id xfce4-power-manager start
 exec --no-startup-id conky -c ~/.conky/Gotham/Gotham
 exec --no-startup-id volumeicon start
@@ -188,7 +188,7 @@ exec --no-startup-id firefox
 exec --no-startup-id brave-browser
 exec --no-startup-id thunderbird
 exec --no-startup-id radiotray
-exec --no-startup-id ~/.zohodocs/bin/zohodocs
+#exec --no-startup-id ~/.zohodocs/bin/zohodocs
 exec --no-startup-id urxvt256c-ml -e tmux
 exec --no-startup-id mpd
 #exec --no-startup-id mate-appearance-properties
@@ -259,6 +259,7 @@ bindsym $mod+XF86AudioPause mode "$mode_system"
 #Start Programs
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+t exec thunar
+bindsym $mod+p exec polo-gtk
 bindsym $mod+c exec cerebro
 bindsym $mod+ctrl+e exec emacs
 bindsym Mod1+space exec emacs

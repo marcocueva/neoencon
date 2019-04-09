@@ -176,7 +176,7 @@ bar {
 exec --no-startup-id dropbox start
 exec --no-startup-id nm-applet
 exec --no-startup-id megasync start
-<<<<<<< HEAD
+#<<<<<<< HEAD
 exec --no-startup-id gpaste
 exec --no-startup-id clipit
 exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage

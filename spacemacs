@@ -328,7 +328,7 @@ you should place your code here."
 (setq org-agenda-files (list "~/Documents/org/work.org"
                              "~/Documents/org/personal.org"))
 (setq org-todo-keywords
-      '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
+      '((sequence "TODO" "IN-PROGRESS" "IDEA" "WAITING" "DONE"  "CANCELED")))
 
 (setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("@S-berg" . ?s) ("referencia" . ?r) ("desktop" . ?d) ("laptop" . ?l)))
 

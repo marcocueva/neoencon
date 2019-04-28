@@ -314,6 +314,7 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq initial-frame-alist '( (width . 120) (height . 40)))
+  (setq completion-ignore-case  t)
   )
 
 (defun dotspacemacs/user-config ()
@@ -324,16 +325,16 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   )
-(setq org-agenda-files (list "~/Dropbox/org/work.org"
-                             "~/Dropbox/org/personal.org"))
+(setq org-agenda-files (list "~/Documents/org/work.org"
+                             "~/Documents/org/personal.org"))
 (setq org-todo-keywords
-      '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
+      '((sequence "TODO" "IN-PROGRESS" "IDEA" "WAITING" "DONE"  "CANCELED")))
 
 (setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("@S-berg" . ?s) ("referencia" . ?r) ("desktop" . ?d) ("laptop" . ?l)))
 
 (setq ispell-program-name "hunspell" )
 (require 'ispell )
-(setq ispell-personal-dictionary "~/Dropbox/Dots/ispell/.ispell" )
+(setq ispell-personal-dictionary "~/Documents/Dots/ispell/.ispell" )
 
 (dolist (hook '(text-mode-hook))
   (add-hook hook (lambda () (flyspell-mode 1))))

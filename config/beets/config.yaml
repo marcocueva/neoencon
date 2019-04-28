@@ -1,0 +1,29 @@
+
+       plugins: bpd ftintitle embedart spotify scrub lastgenre discogs
+       pluginpath: ~/beets/myplugins
+
+       library: ~/.config/beets/music.blb
+       directory: ~/Music
+
+       import_copy: no
+       import_move: yes
+       import_write: yes
+       import_resume: ask
+       import_incremental: yes
+       import_art: yes
+       import_quiet_fallback: skip
+       import_timid: no
+       import_log: beetslog.txt
+       ignore: .AppleDouble ._* *~ .DS_Store
+
+       art_filename: albumart
+       threaded: yes
+       color: yes
+
+
+       path_default: $genre/$albumartist/$album%aunique{}/$track - $title
+       path_singleton: Singletons/$artist - $title
+       path_comp: Compilations/$genre/$album%aunique{}/$track $title
+       path_albumtype_soundtrack: Soundtracks/$album/$track $title
+
+

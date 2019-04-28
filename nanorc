@@ -51,6 +51,10 @@
 
 ## Constantly display the cursor position in the status bar.  Note that
 ## this overrides "quickblank".
+# set constantshow
+
+## Use cut-from-cursor-to-end-of-line by default.
+# set cutfromcursor
  set constantshow
 
 ## Use cut-from-cursor-to-end-of-line by default.
@@ -140,7 +144,7 @@ set nowrap
 # set rebindkeypad
 
 ## Do extended regular expression searches by default.
-# set regexp
+ set regexp
 
 ## Put the cursor on the highlighted item in the file browser;
 ## useful for people who use a braille display.

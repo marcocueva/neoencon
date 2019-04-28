@@ -29,6 +29,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-obsession'
+Plug 'haishanh/night-owl.vim'
 
 "Documentación
 Plug 'Keith/investigate.vim'
@@ -126,7 +127,7 @@ if has('gui_running')
 set background=dark
 colorscheme gruvbox "solarized pyte pencil vividchalk PaperColor
 else
-colorscheme gruvbox "PaperColor oceanlight pencil vividchalk PaperColor desert molokai dracula industry
+colorscheme night-owl "gruvbox PaperColor oceanlight pencil vividchalk PaperColor desert molokai dracula industry
 set background=dark
 endif
 

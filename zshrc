@@ -14,8 +14,8 @@ fi
 # Customize to your needs...
 
 #edit 20190311
- #export EDITOR="nvim"
- export EDITOR="vim"
+ export EDITOR="nvim"
+ #export EDITOR="vim"
  export USE_EDITOR=$EDITOR
  export VISUAL=$EDITOR
 

@@ -28,6 +28,7 @@ alias l='ls -lah --color=auto'   # Long view, show hidden
 alias la='ls -AF --color=auto'   # Compact view, show hidden
 alias ll='ls -lFh --color=auto'  # Long view, no hidden
 
+alias logoff='i3-msg exit'
 alias cl='clear'
 alias gs='ghostscript'
 

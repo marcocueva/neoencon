@@ -176,14 +176,25 @@ bar {
 exec --no-startup-id dropbox start
 exec --no-startup-id nm-applet
 exec --no-startup-id megasync start
+<<<<<<< HEAD
+#exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
 exec --no-startup-id xfce4-clipman
-#exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
+||||||| merged common ancestors
+exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
 #exec --no-startup-id clipit
-#exec --no-startup-id gpaste
+=======
+#<<<<<<< HEAD
+exec --no-startup-id gpaste
+exec --no-startup-id clipit
 exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
-#exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
+#resolved git conflicts
+#=======
+exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
 #exec --no-startup-id clipit
+>>>>>>> b1fb6e89d75cdb927ab2484912b46902f2f65c4c
 #exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
+#>>>>>>> c11126f220a9007704f612dda3df3f1f84fc8332
+# End of conflicting
 #exec --no-startup-id xfce4-power-manager start
 exec --no-startup-id conky -c ~/.conky/Gotham/Gotham
 exec --no-startup-id volumeicon start

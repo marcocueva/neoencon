@@ -48,6 +48,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bruno-/vim-husk'
 Plug 'will133/vim-dirdiff'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+
 " folds
 Plug 'tmhedberg/SimpylFold'
 " SCSS / CSS
@@ -150,8 +153,8 @@ endif
 " Always show the cursor set ruler
 set clipboard=unnamedplus
 " Don't show intro
-set shortmess+=I
 set splitbelow
+"set shortmess=at
 "split windows
 set splitright
 "split navigations
@@ -499,6 +502,8 @@ nnoremap <silent> ,tc :call neoterm#kill()<cr>"
 command! -nargs=+ Tg :T git <args>
 
 let g:fzf_commits_log_options = '--color=always --pretty=format:"%Cred%h%Creset - %s %Cgreen(%cr)%Creset by %C(bold blue)%an%C(yellow)%d%Creset" --abbrev-commit --date=relative'
+
+" fzf comandos, 2019-04-28
 
 " This is the default extra key bindings
 let g:fzf_action = {

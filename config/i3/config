@@ -181,9 +181,6 @@ exec --no-startup-id xfce4-clipman
 #exec --no-startup-id clipit
 #exec --no-startup-id gpaste
 exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
-#exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
-#exec --no-startup-id clipit
-#exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
 #exec --no-startup-id xfce4-power-manager start
 exec --no-startup-id conky -c ~/.conky/Gotham/Gotham
 exec --no-startup-id volumeicon start

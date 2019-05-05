@@ -380,7 +380,11 @@ nnoremap K :call LanguageClient_textDocument_hover()<cr>
 "------------------------"
 "" Shortcut for NERDTreeToggle
 nmap <leader>nt :NERDTreeToggle <CR>
+" However, you can also directly open NerdTree on the file you’re editing
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+
 let g:NERDTreeWinSize=20
+
 "Show hidden files in NerdTree
 let NERDTreeShowHidden=1
 
@@ -412,7 +416,10 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not
+
+" And here is how to automatically close a tab if the only remaining window is NerdTree
 let g:NERDToggleCheckAllLines = 1
+autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endi
 
 " = NeoVim Specific Settings = {{{
 " ================================

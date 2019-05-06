@@ -77,3 +77,14 @@ xterm*ScrollBar: false
 
 ! stop output to terminal from jumping down to bottom of scroll again
 xterm*scrollTtyOutput: false
+
+!clickable urls
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+! No mouse
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true

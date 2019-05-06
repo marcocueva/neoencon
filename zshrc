@@ -163,3 +163,8 @@ export PATH=$PATH:~/.yarn/bin
 
 [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 export PATH="$PATH:$HOME/cleanup/bin"
+
+# docker compose autocompletion
+fpath=(~/.zsh/completion $fpath)
+
+autoload -Uz compinit && compinit -i

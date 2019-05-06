@@ -359,3 +359,12 @@ set $workspace7 "7 /"
 set $workspace8 "8  "
 set $workspace9 "9  "
 set $workspace10 "10 "
+
+#set gaps
+smart_gaps on
+
+gaps inner 8
+gaps outer 0
+
+smart_borders on
+new_window none

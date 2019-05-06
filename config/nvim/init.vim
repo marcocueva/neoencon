@@ -418,8 +418,8 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 
 " And here is how to automatically close a tab if the only remaining window is NerdTree
-let g:NERDToggleCheckAllLines = 1
-autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endi
+"let g:NERDToggleCheckAllLines = 1
+"autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endif
 
 " = NeoVim Specific Settings = {{{
 " ================================

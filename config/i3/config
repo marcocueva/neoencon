@@ -190,17 +190,18 @@ exec --no-startup-id volumeicon start
 exec --no-startup-id blueberry-tray
 exec --no-startup-id redshift-gtk  || redshift-gtk -l 59.294:18.113
 exec --no-startup-id firefox
-exec --no-startup-id brave-browser
+#exec --no-startup-id brave-browser
+exec --no-startup-id  chromium
 exec --no-startup-id thunderbird
 exec --no-startup-id radiotray
 #exec --no-startup-id ~/.zohodocs/bin/zohodocs
-exec --no-startup-id urxvt256c-ml -e tmux
-exec --no-startup-id i3-sensible-terminal -e tmux
+#exec --no-startup-id urxvt256c-ml -e tmux
+exec --no-startup-id i3-sensible-terminal # -e tmux
 exec --no-startup-id mpd
 #exec --no-startup-id mate-appearance-properties
 exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers
 #exec --no-startup-id /usr/libexec/xfce-polkit ¥
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-polkit-authentication-agent-1 &
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Disable capslock 2019/03/17
@@ -277,6 +278,7 @@ bindsym $mod+Shift+m exec xterm -e mc
 bindsym $mod+Shift+y exec yakuake
 bindsym $mod+Shift+g exec /usr/libexec/gpaste/gpaste-ui
 bindsym $mod+g exec google-chrome-stable
+bindsym $mod+ctrl+g exec chromium
 bindsym $mod+b exec brave-browser
 bindsym $mod+o exec gnome-calculator
 # bindsym $mod+ctrl+o exec opera
@@ -323,6 +325,7 @@ assign [class="Nemo"] $workspace4
 assign [class="Nautilus"] $workspace4
 assign [class="Brave-browser"] $workspace2
 assign [class="Google-chrome"] $workspace2
+assign [class="Chromium"] $workspace2
 assign [class="Thunderbird"] $workspace5
 assign [class="Gimp"] $workspace7
 assign [class="Inkscape"] $workspace7
@@ -363,3 +366,12 @@ set $workspace7 "7 /"
 set $workspace8 "8  "
 set $workspace9 "9  "
 set $workspace10 "10 "
+
+#set gaps
+smart_gaps on
+
+gaps inner 8
+gaps outer 0
+
+smart_borders on
+new_window none

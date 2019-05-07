@@ -52,7 +52,7 @@ URxvt.visualBell: true
 URxvt.fading: 30
 URxvt.cutchars: "`\"'&()*,:;<=>?[\\]^{|}$"
 
- *background: rgb:42/38/08
+ *background: rgb:10/10/10
  *foreground: rgb:ff/ff/ff
  *color0:     rgb:00/00/00
  *color1:     rgb:d3/62/65

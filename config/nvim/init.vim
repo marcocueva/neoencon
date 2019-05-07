@@ -695,3 +695,6 @@ vmap gog <Plug>(openbrowser-search)
 " " Also you can specify another search engine.
 " :OpenBrowserSmartSearch -github tyru
 " }}}
+
+
+let g:ruby_host_prog = '/home/marco/.gem/ruby/2.6.0/bin/neovim-ruby-host.ruby2.6'

@@ -30,7 +30,7 @@ alias ll='ls -lFh --color=auto'  # Long view, no hidden
 
 alias logoff='i3-msg exit'
 alias cl='clear'
-alias gs='ghostscript'
+alias ghs='ghostscript'
 
 alias -s tex=nvim
 alias -s config=nvim
@@ -48,6 +48,7 @@ alias gpaste='/usr/libexec/gpaste/gpaste-ui'
 # GIT ALIASES
 alias g=git
 alias ga='git add'
+alias gs='git status'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gc='git commit -v'

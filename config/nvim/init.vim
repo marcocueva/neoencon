@@ -130,7 +130,7 @@ if has('gui_running')
 set background=dark
 colorscheme gruvbox "solarized pyte pencil vividchalk PaperColor
 else
-colorscheme gruvbox "night-owl gruvbox PaperColor oceanlight pencil vividchalk PaperColor desert molokai dracula industry
+colorscheme gruvbox "pencil night-owl oceanlight pencil vividchalk PaperColor desert molokai dracula industry
 set background=dark
 endif
 

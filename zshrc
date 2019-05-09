@@ -89,6 +89,10 @@ extract () {
         echo "'$1' is not a valid file"
     fi
 }
+# load tilix prompt
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
 
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache

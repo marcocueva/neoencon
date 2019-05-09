@@ -46,7 +46,6 @@ values."
       git
       html
       markdown
-      php
       org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -357,21 +356,21 @@ you should place your code here."
   (ispell-word))
 (global-set-key (kbd "M-<f8>") 'flyspell-check-next-highlighted-word)
 
-(add-to-list 'load-path "~/.emacs.d/vendor/neotree")
-(require 'neotree)
-(global-set-key [f9] 'neotree-toggle)
-    (add-hook 'neotree-mode-hook
-              (lambda ()
-                (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
-                (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-quick-look)
-                (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
-                (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
-                (define-key evil-normal-state-local-map (kbd "g") 'neotree-refresh)
-                (define-key evil-normal-state-local-map (kbd "n") 'neotree-next-line)
-                (define-key evil-normal-state-local-map (kbd "p") 'neotree-previous-line)
-                (define-key evil-normal-state-local-map (kbd "A") 'neotree-stretch-toggle)
-                (define-key evil-normal-state-local-map (kbd "H") 'neotree-hidden-file-toggle)))
-
+;; (add-to-list 'load-path "~/.emacs.d/vendor/neotree")
+;; (require 'neotree)
+;; (global-set-key [f9] 'neotree-toggle)
+;;     (add-hook 'neotree-mode-hook
+;;               (lambda ()
+;;                 (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+;;                 (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-quick-look)
+;;                 (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+;;                 (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
+;;                 (define-key evil-normal-state-local-map (kbd "g") 'neotree-refresh)
+;;                 (define-key evil-normal-state-local-map (kbd "n") 'neotree-next-line)
+;;                 (define-key evil-normal-state-local-map (kbd "p") 'neotree-previous-line)
+;;                 (define-key evil-normal-state-local-map (kbd "A") 'neotree-stretch-toggle)
+;;                 (define-key evil-normal-state-local-map (kbd "H") 'neotree-hidden-file-toggle)))
+;; 
 (global-set-key (kbd "C-x o") 'ace-window)
 
 (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")

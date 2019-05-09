@@ -13,13 +13,13 @@ xterm*faceName: FiraCode
 xterm*faceSize: 12
 xterm*faceStyle: Regular
 
-URxvt.font: xft:Source\ Code\ Pro\ for\ Powerline:size=12
-URxvt.boldFont: xft:Source\ Code\ Pro\ for\ Powerline:bold:size=12
-URxvt.italicFont: xft:Source\ Code\ Pro\ for\ Powerline:light:italic:autohint=true:size=14
-!URxvt.font: xft:FiraCode:size=11,style=Regular
-!URxvt.boldFont: xft:FiraCode:size=12,style=Bold
+! URxvt.font: xft:Source\ Code\ Pro\ for\ Powerline:size=12
+! URxvt.boldFont: xft:Source\ Code\ Pro\ for\ Powerline:bold:size=12
+! URxvt.italicFont: xft:Source\ Code\ Pro\ for\ Powerline:light:italic:autohint=true:size=14
+URxvt.font: xft:FiraCode:size=12,style=Regular
+URxvt.boldFont: xft:FiraCode:size=12,style=Bold
 !URxvt.boldFont: xft:Roboto\ Mono\ for\ Powerline:size=11,style=Bold
-!URxvt.italicFont: xft:Roboto\ Mono\ for\ Powerline:size=11,style=Italic
+URxvt.italicFont: xft:Go\ Mono\ for\ Powerline:size=11:Italic
 
 URxvt.letterSpace: 0
 XTerm*letterSpace: 0

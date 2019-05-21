@@ -36,6 +36,7 @@ floating_modifier $mod
 #bindsym $mod+Return exec i3-sensible-editor
 #bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec gnome-terminal
+#bindsym $mod+Return exec tilix
 bindsym $mod+Return exec urxvt256c-ml
 
 # kill focused window
@@ -176,12 +177,8 @@ bar {
 exec --no-startup-id dropbox start
 exec --no-startup-id nm-applet
 exec --no-startup-id megasync start
-exec --no-startup-id xfce4-clipman
-#exec --no-startup-id /usr/libexec/gpaste/gpaste-ui --enable-applet
-#exec --no-startup-id clipit
-#exec --no-startup-id gpaste
+exec --no-startup-id copyq
 exec --no-startup-id ~/cerebro-0.3.1-x86_64.AppImage
-#exec --no-startup-id xfce4-power-manager start
 exec --no-startup-id conky -c ~/.conky/Gotham/Gotham
 exec --no-startup-id volumeicon start
 exec --no-startup-id blueberry-tray
@@ -190,14 +187,11 @@ exec --no-startup-id firefox
 exec --no-startup-id brave-browser
 exec --no-startup-id thunderbird
 exec --no-startup-id radiotray
-#exec --no-startup-id ~/.zohodocs/bin/zohodocs
+exec --no-startup-id ~/.zohodocs/bin/zohodocs
 exec --no-startup-id urxvt256c-ml -e tmux
 exec --no-startup-id mpd
-#exec --no-startup-id mate-appearance-properties
 exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers
-exec --no-startup-id /usr/libexec/xfce-polkit ¥
-#exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1 &
-#exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Disable capslock 2019/03/17
 #exec --no-startup-id setxkbmap  -option ctrl:nocaps
@@ -313,6 +307,7 @@ for_window [class="qBittorrent"] floating enable floating_maximum_size <720> x <
 # Open applications on specific workspaces
 assign [class="Firefox"] $workspace3
 assign [class="^vlc"]  $workspace9
+assign [class="Code"]  $workspace9
 assign [class="I3-sensible-terminal"] $workspace1
 assign [class="Thunar"] $workspace4
 assign [class="Nemo"] $workspace4

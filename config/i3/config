@@ -191,8 +191,8 @@ exec --no-startup-id ~/.zohodocs/bin/zohodocs
 exec --no-startup-id urxvt256c-ml -e tmux
 exec --no-startup-id mpd
 exec --no-startup-id feh --randomize --bg-fill ~/Documents/Candy/Wallpapers
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1  &
 # Disable capslock 2019/03/17
 #exec --no-startup-id setxkbmap  -option ctrl:nocaps
 

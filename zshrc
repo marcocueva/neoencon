@@ -160,6 +160,9 @@ SAVEHIST=1000
 
 #source /usr/share/nvm/init-nvm.sh
 export PATH=$PATH:~/.yarn/bin
+#edit 20190523
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export PATH="$PATH:$HOME/cleanup/bin"
 
 [ -n "$XTERM_VERSION" ] && transset-df --id "$WINDOWID" >/dev/null
 export PATH="$PATH:$HOME/cleanup/bin"

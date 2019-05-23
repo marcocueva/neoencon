@@ -30,6 +30,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-obsession'
 Plug 'haishanh/night-owl.vim'
+Plug 'luochen1990/rainbow'
 
 "Documentación
 Plug 'Keith/investigate.vim'
@@ -46,6 +47,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug '2072/PHP-Indenting-for-VIm'
 Plug 'bruno-/vim-husk'
 Plug 'will133/vim-dirdiff'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
@@ -169,6 +171,11 @@ set wildmenu
 set lazyredraw
 " highlight a matching [{()}] when cursor is placed on start/end character
 set showmatch
+" edit 201905223
+hi MatchParen cterm=none ctermbg=yellow ctermfg=blue
+
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
 " Always highlight column 80 so it's easier to see where cutoff appears on longer screens
 autocmd BufWinEnter * highlight ColorColumn ctermbg=lightgray
 set colorcolumn=80
